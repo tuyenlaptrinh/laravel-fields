@@ -1,0 +1,26 @@
+{
+    "name": "tuyenlaptrinh/laravel-fields",
+    "description": "Laravel Form Fields",
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Tuyenlaptrinh\\LaravelFields\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tuyen Pham",
+            "email": "tuyenlaptrinh@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tuyenlaptrinh\\LaravelFields\\LaravelFieldsServiceProvider"
+            ]
+        }
+    }
+}
