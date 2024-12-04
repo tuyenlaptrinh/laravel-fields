@@ -1,8 +1,15 @@
 {
     "name": "tuyenlaptrinh/laravel-fields",
-    "description": "Laravel Form Fields",
+    "description": "The form field components for Laravel",
     "license": "MIT",
     "type": "library",
+    "keywords": [
+        "fields",
+        "laravel form",
+        "laravel fields",
+        "bootstrap",
+        "tailwindcss"
+    ],
     "autoload": {
         "psr-4": {
             "Tuyenlaptrinh\\LaravelFields\\": "src"
@@ -15,6 +22,7 @@
         }
     ],
     "require": {
+        "php": "^8.0"
     },
     "extra": {
         "laravel": {

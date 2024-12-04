@@ -9,5 +9,5 @@ return [
     | Supported drivers: "bootstrap", "tailwindcss"
     |
     */
-    'library' => 'tailwindcss'
+    'library' => 'bootstrap'
 ];
