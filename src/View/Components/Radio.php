@@ -18,6 +18,9 @@ class Radio extends Component
     public string $help;
     public array $options;
     public string $rootClass;
+    public bool $inline;
+    public bool $grid;
+    public string $size;
 
     public function __construct(
         string $name = '',
@@ -30,6 +33,9 @@ class Radio extends Component
         string $help = '',
         string $default = '',
         string $rootClass = '',
+        bool $inline = false,
+        bool $grid = false,
+        string $size = '9',
         array $options = []
     )
     {
@@ -44,7 +50,9 @@ class Radio extends Component
         $this->margin = $margin;
         $this->rootClass = $rootClass;
         $this->options = $options;
-
+        $this->inline = $inline;
+        $this->grid = $grid;
+        $this->size = $size;
     }
 
     public function render(): View|Closure|string

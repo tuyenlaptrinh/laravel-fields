@@ -18,9 +18,11 @@ class Checkbox extends Component
     public string $help;
     public array $options;
     public string $rootClass;
+    public bool $inline;
+    public bool $grid;
+    public string $size;
 
     public function __construct(
-        array $options = [],
         string $name = '',
         string $label = '',
         bool $required = false,
@@ -30,7 +32,11 @@ class Checkbox extends Component
         $value = '',
         string $help = '',
         string $default = '',
-        string $rootClass = ''
+        string $rootClass = '',
+        bool $inline = false,
+        bool $grid = false,
+        string $size = '9',
+        array $options = []
     )
     {
         $this->name = $name;
@@ -44,6 +50,9 @@ class Checkbox extends Component
         $this->default = $default;
         $this->margin = $margin;
         $this->rootClass = $rootClass;
+        $this->inline = $inline;
+        $this->grid = $grid;
+        $this->size = $size;
 
     }
 

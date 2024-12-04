@@ -20,6 +20,8 @@ class Input extends Component
     public string $help;
     public bool $multiple;
     public string $rootClass;
+    public bool $grid;
+    public string $size;
 
     public function __construct(
         string $name = '',
@@ -34,7 +36,9 @@ class Input extends Component
         string $help = '',
         string $default = '',
         bool $multiple = false,
-        string $rootClass = ''
+        string $rootClass = '',
+        bool $grid = false,
+        string $size = '9',
     )
     {
         $this->name = $name;
@@ -50,6 +54,8 @@ class Input extends Component
         $this->margin = $margin;
         $this->multiple = $multiple;
         $this->rootClass = $rootClass;
+        $this->grid = $grid;
+        $this->size = !empty($label) ? $size : '12';
 
     }
 

@@ -22,6 +22,8 @@ class Textarea extends Component
     public string $rootClass;
     public int $rows;
     public int $cols;
+    public bool $grid;
+    public string $size;
 
     public function __construct(
         string $name = '',
@@ -39,6 +41,8 @@ class Textarea extends Component
         string $rootClass = '',
         int $rows = 5,
         int $cols = 0,
+        string $size = '9',
+        bool $grid = false
     )
     {
         $this->name = $name;
@@ -56,7 +60,8 @@ class Textarea extends Component
         $this->rootClass = $rootClass;
         $this->rows = $rows;
         $this->cols = $cols;
-
+        $this->grid = $grid;
+        $this->size = $size;
     }
 
     public function render(): View|Closure|string

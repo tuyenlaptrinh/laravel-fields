@@ -20,6 +20,8 @@ class Select extends Component
     public string $rootClass;
     public $placeholder;
     public bool $multiple;
+    public bool $grid;
+    public string $size;
 
     public function __construct(
         string $name = '',
@@ -34,6 +36,8 @@ class Select extends Component
         string $default = '',
         string $rootClass = '',
         bool $multiple = false,
+        string $size = '9',
+        bool $grid = false,
         array $options = []
     )
     {
@@ -50,6 +54,8 @@ class Select extends Component
         $this->rootClass = $rootClass;
         $this->options = $options;
         $this->multiple = $multiple;
+        $this->grid = $grid;
+        $this->size = $size;
 
     }
 
